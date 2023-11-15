@@ -23,6 +23,11 @@ nav li {
     display: inline;
     margin: 0 10px; 
 }
+
+nav ul li a img {
+  width: 30px; 
+  height: auto;
+}
   
 nav a {
     text-decoration: none;
