@@ -1,206 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Walk in Style</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="images/icono.png" type="image/x-icon">
-    <link rel="shortcut icon" href="images/icono.png" type="image/x-icon">
-  </head>
-  <body>
-    <header>
-      <h1>Walk in Style</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Hombre</a></li>
-          <li><a href="#">Mujer</a></li>
-          <li><a href="#"><img src="images/carrito-de-compras.png" alt="" /></a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <div id="images">
-      <div class="shoes"><img src="images/1.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-    </div>
-    </div>
-      <div class="shoes"><img src="images/2.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Walk in Style</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/icono.png">
+  
+</head>
+
+<body>
+  <header>
+    <h1>Walk in Style</h1>
+    <div class="container-icon">
+      <div class="container-cart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="icon-cart">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+        </svg>
+        <div class="count-products">
+          <span id="contador-productos">0</span>
+        </div>
+      </div>
+
+      <div class="container-cart-products hidden-cart">
+        <div class="row-product hidden">
+          <div class="cart-product">
+            <div class="info-cart-product">
+              <span class="cantidad-producto-carrito">1</span>
+              <p class="titulo-producto-carrito">Zapatos Nike</p>
+              <span class="precio-producto-carrito">$80</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="icon-close">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="cart-total hidden">
+          <h3>Total:</h3>
+          <span class="total-pagar">$200</span>
+        </div>
+        <p class="cart-empty">El carrito está vacío</p>
       </div>
     </div>
-      <div class="shoes"><img src="images/3.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
+  </header>
+  <div class="container-items">
+    <div class="item">
+      <figure>
+        <img src="images/1.png" alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>Jordan1</h2>
+        <p class="price">$80</p>
+        <button class="btn-add-cart">Comprar</button>
       </div>
     </div>
-      <div class="shoes"><img src="images/4.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
+    <div class="item">
+      <figure>
+        <img
+          src="images/2.png"
+          alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>Jorda2</h2>
+        <p class="price">$20</p>
+        <button class="btn-add-cart">Comprar</button>
       </div>
     </div>
-      <div class="shoes"><img src="images/5.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
+    <div class="item">
+      <figure>
+        <img
+          src="images/3.png"
+          alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>Jordan3</h2>
+        <p class="price">$50</p>
+        <button class="btn-add-cart">Comprar</button>
       </div>
     </div>
-      <div class="shoes"><img src="images/6.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
+    <div class="item">
+      <figure>
+        <img
+          src="images/4.png"
+          alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>Jordan4</h2>
+        <p class="price">$90</p>
+        <button class="btn-add-cart">Comprar</button>
       </div>
     </div>
-      <div class="shoes"><img src="images/7.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
+    <div class="item">
+      <figure>
+        <img
+          src="images/5.png"
+          alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>Jordan5</h2>
+        <p class="price">$50</p>
+        <button class="btn-add-cart">Comprar</button>
       </div>
     </div>
-      <div class="shoes"><img src="images/8.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
+    <div class="item">
+      <figure>
+        <img
+          src="images/6.png"
+          alt="producto" />
+      </figure>
+      <div class="info-product">
+        <h2>Jordan6</h2>
+        <p class="price">$90</p>
+        <button class="btn-add-cart">Comprar</button>
       </div>
     </div>
-      <div class="shoes"><img src="images/9.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/10.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/11.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/12.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/13.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/14.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/15.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/16.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/17.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/18g.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/19g.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/20g.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/21g.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/22g.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/23g.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/24g.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/25g.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/26g.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>    
-    </div>
-      <div class="shoes"><img src="images/27g.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/28g.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/29g.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-      <div class="shoes"><img src="images/30g.png" alt="" />
-        <p>Jordan Hombre</p>
-        <p>Valor:</p>
-        <button>Comprar</button
-      </div>
-    </div>
-    </div>
-  </body>
+  </div>
+  
+
+  <script src="app.js"></script>
+</body>
+
 </html>
