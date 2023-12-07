@@ -137,3 +137,6 @@ window.onload = function(){
     renderCarrito()
   }
 }
+
+
+

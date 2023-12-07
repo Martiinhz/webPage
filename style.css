@@ -1,5 +1,5 @@
 body{
-    background-color: #110f0fea;
+    background-color: grey;
   }
   header, .alert{
     z-index: 100;
@@ -39,3 +39,54 @@ body{
   .hide, .remove{
     display: none;
   }
+
+  .text-primary {
+    color: white!important;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: grey;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: grey;
+  border-color: white;
+}
+
+.alert-primary{
+  background-color: grey;
+  color: white;
+  border-color: grey;
+}
+
+.alert-danger{
+  color: rgb(255, 255, 255);
+  background-color: grey;
+  border-color: grey;
+}
+
+.btn-primary:hover{
+color: none;
+background-color: none;
+}
+
+.button{
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+  background-color: grey;
+}
+
+.button:hover{
+  background-color: rgb(25, 135, 84);
+}
