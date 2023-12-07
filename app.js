@@ -106,7 +106,7 @@ function removeItemCarrito(e){
 
   setTimeout( function(){
     alert.classList.add('remove')
-  }, 2000)
+  }, 1000)
     alert.classList.remove('remove')
 
   tr.remove()
