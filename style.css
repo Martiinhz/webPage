@@ -1,0 +1,92 @@
+body{
+    background-color: grey;
+  }
+  header, .alert{
+    z-index: 100;
+  }
+  .description{
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+  }
+  .description:hover{
+    height: 80px;
+  }
+  .carrito{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .table__productos{
+    display: flex;
+  }
+  .table__productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  .table__cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  .hide, .remove{
+    display: none;
+  }
+
+  .text-primary {
+    color: white!important;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: grey;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: grey;
+  border-color: white;
+}
+
+.alert-primary{
+  background-color: grey;
+  color: white;
+  border-color: grey;
+}
+
+.alert-danger{
+  color: rgb(255, 255, 255);
+  background-color: grey;
+  border-color: grey;
+}
+
+.btn-primary:hover{
+color: none;
+background-color: none;
+}
+
+.button{
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+  background-color: grey;
+}
+
+.button:hover{
+  background-color: rgb(25, 135, 84);
+}
